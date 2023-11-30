@@ -4,6 +4,9 @@ const sequelize = require('../config/connection.js');
 
 class Category extends Model {}
 
+// category includes id (integer, notnull primary, auto)
+// and category_name (string, notnull) 
+// taken from the module 13 models.
 Category.init(
   {
     id: {
