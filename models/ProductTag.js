@@ -4,6 +4,10 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+// tag includes id (integer, notnull, primary, auto)
+// product id (integer, references models id)
+// and tag id (integer, references tags model id) 
+// taken from the module 13 models.
 ProductTag.init(
   {
     // define columns
