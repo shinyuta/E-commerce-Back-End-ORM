@@ -7,6 +7,12 @@ const sequelize = require('../config/connection');
 class Product extends Model {}
 
 // set up fields and rules for Product model
+// product includes id (integer, notnull, primary, auto)
+// product name (string notnull)
+// price (decimal, not null, validates decimal)
+// stock (integer, not null, default 10, validates numeric)
+// and category id (integer, model id)
+// taken from the module 13 models.
 Product.init(
   {
     // define columns
