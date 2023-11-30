@@ -4,7 +4,7 @@ const Category = require('./Category');
 const Tag = require('./Tag');
 const ProductTag = require('./ProductTag');
 
-// associations
+// associations taken from "Associations" in module 13
 // Products belongsTo Category
 Product.belongsTo(Category,{
   foreignKey: 'category_id'
